@@ -1,24 +1,20 @@
-// src/App.js
-
 import React from "react";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to THUGKEED TECH 💻🔥</h1>
-        <p>React App is running successfully!</p>
-        <a
-          className="App-link"
-          href="https://github.com/Thugkeedxxx"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit GitHub
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
