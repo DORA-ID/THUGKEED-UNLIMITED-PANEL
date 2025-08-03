@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+export default function home() {
   return (
     <div className="text-center mt-24">
       <h1 className="text-4xl font-bold mb-6">Welcome to THUGKEED TECH UNLIMITED PANEL</h1>
