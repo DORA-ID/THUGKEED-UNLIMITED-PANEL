@@ -1,16 +1,26 @@
-import React from "react";
+import React from 'react';
 
-function Login() {
+export default function Login() {
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-bold">Login</h2>
-      <form className="flex flex-col space-y-4 mt-4">
-        <input type="email" placeholder="Email" className="p-2 border" />
-        <input type="password" placeholder="Password" className="p-2 border" />
-        <button className="bg-black text-white p-2 rounded">Login</button>
-      </form>
+    <div className="min-h-screen flex items-center justify-center bg-black text-white">
+      <div className="p-6 bg-gray-900 rounded-xl shadow-xl w-full max-w-sm">
+        <h1 className="text-xl font-bold mb-4">Login</h1>
+        <form className="space-y-4">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white"
+          />
+          <button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded">
+            Sign In
+          </button>
+        </form>
+      </div>
     </div>
   );
-}
-
-export default Login;
+    }
