@@ -1,5 +1,6 @@
-# Object file
-*.o
+.vercel
 
-# Ada Library Information
-*.ali
+# Logs or debug
+*.log
+debug.log
+
