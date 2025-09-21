@@ -7,13 +7,13 @@ export default function Login() {
         <h1 className="text-xl font-bold mb-4">Login</h1>
         <form className="space-y-4">
           <input
-            type="email"
-            placeholder="Email"
+            type="queensanu12@gmail.com"
+            placeholder="queensanu12@gmail.com"
             className="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white"
           />
           <input
-            type="password"
-            placeholder="Password"
+            type="02"
+            placeholder="02"
             className="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white"
           />
           <button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded">
